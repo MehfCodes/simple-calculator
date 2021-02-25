@@ -1,0 +1,265 @@
+body {
+  max-width: 100%;
+  height: 665px;
+  margin: 0;
+  background-color: #a8d2f3;
+}
+
+#layout {
+  max-width: 100%;
+  height: inherit;
+  background-color: #a8d2f3;
+}
+
+#container {
+  width: 290px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a7b4bb98;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+#box {
+  width: 100%;
+  height: 150px;
+  background-color: #3a4654ce;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  box-sizing: border-box;
+  padding: 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+#label {
+  width: 100%;
+  height: 100px;
+  background-color: #3a4654ce;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  font-size: 35px;
+  font-weight: 400;
+  background-color: #3a4654ce;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: end;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+
+#keyboard {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  height: 350px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.btn {
+  width: 72.5px;
+  height: 70px;
+}
+
+.btn:hover {
+  background-color: #DA2C38;
+}
+
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  width: 145px;
+  border-bottom-left-radius: 8px;
+}
+
+#one {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#two {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#three {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#four {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#five {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#six {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#seven {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#eight {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#nine {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#clean {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  color: #d31212;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#clean:hover {
+  color: white;
+}
+
+#back {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#percentage {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#division {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#times {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#minus {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#plus {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#equals {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  border-bottom-right-radius: 8px;
+}
+
+#dat {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+#label {
+  text-align: end;
+}
+
+.numbers {
+  background-color: #3a4654;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.sign {
+  background-color: #3a4654;
+  color: #899ba2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf);
+  font-weight: bold;
+}
+#label {
+  font-size: 18px;
+  font-family: Roboto;
+  color: #a7b4bb;
+  padding: 5px 5px 0 0;
+  display: inline;
+  overflow: hidden;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=main.css.map */
